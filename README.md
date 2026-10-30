@@ -54,7 +54,7 @@ easy. Checking 1000 games for 6 strategies is not. So we climb the **automation 
 
 ## Before you start
 
-Check that your tools work (do this at home, not during class):
+Check that your tools work:
 
 ```bash
 git --version
@@ -65,12 +65,19 @@ kubectl get nodes
 `kubectl get nodes` must show a node that is `Ready` (use `minikube start --driver=docker` or Docker Desktop's
 Kubernetes, as in the Kubernetes tutorial).
 
-**Get the code:** click **Fork** on GitHub (top right), then clone *your fork*:
+**Get the code:** this repository is a **template**. You make your own copy of it, and then clone your copy:
+
+1. On the repository page on GitHub, click the green **Use this template** button (top right), then **Create a new repository**.
+2. Choose yourself as the owner and give it a name, for example `blackjack-automation`.
+3. Make it **Public** (this keeps GitHub Actions free) and click **Create repository**.
+4. On your new repository, click the green **Code** button, copy the HTTPS address, and clone it:
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
 ```
+
+From now on, `git push` sends your work to **your own** copy. The original template is never changed.
 
 **You also need a way to compile C** for Steps 1 and 2:
 
