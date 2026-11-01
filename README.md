@@ -41,7 +41,7 @@ easy. Checking 1000 games for 6 strategies is not. So we climb the **automation 
 
 | File | What it is |
 |------|------------|
-| `blackjack.c` | The blackjack program from the previous tutorials (unchanged). Same seed + same moves = same game. |
+| `blackjack.c` | A simple blackjack program. Same seed + same moves = same game. |
 | `strategies/*.sh` | The "brains". Each file is a tiny script that decides **h**it or **s**tand. |
 | `play.sh` | The robot player. Plays **one** game using a strategy. |
 | `simulate.sh` | Plays **many** games with one strategy and prints a summary line. |
